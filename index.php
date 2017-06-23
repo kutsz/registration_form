@@ -3,8 +3,8 @@
 require 'ValidationController.php';
 require 'Model.php';
 
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
+// ini_set('error_reporting', E_ALL);
+// ini_set('display_errors', 1);
 
 $valid = new ValidationController();
 
@@ -35,5 +35,3 @@ if (isset($_POST['submit'])) {
 	$valid->showMessage();
 
 }
-
-//$valid->show_var();

@@ -12,15 +12,6 @@ class ValidationController {
 	public $password = '';
 	public $confirm_password = '';
 
-	// public function __construct($login, $email, $password, $confirm_password) {
-
-	// 	$this->login = $this->input($login);
-	// 	$this->email = $this->input($email);
-	// 	$this->password = $this->input($password);
-	// 	$this->confirm_password = $this->input($confirm_password);
-
-	// }
-
 	public function showForm() {
 		require 'form.php';
 	}
@@ -107,36 +98,6 @@ class ValidationController {
 		return true;
 
 	}
-
-	// public function is_valid_password($password, $confirm_password) {
-
-	// 	if (empty($password)) {
-	// 		$this->arrError[] = 'Please enter password';
-	// 		return false;
-
-	// 	} elseif (empty($confirm_password)) {
-
-	// 		$this->arrError[] = 'Please comfirm password!';
-	// 		return false;
-	// 	} elseif ($password != $confirm_password) {
-
-	// 		$this->arrError[] = 'Passwords do not match!';
-	// 		return false;
-
-	// 	} elseif (!empty($password)) {
-
-	// 		//$password = $this->input($_POST["password"]);
-
-	// 		if (!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/', $password)) {
-	// 			$this->arrError[] = "Your Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters";
-	// 			return false;
-	// 		}
-
-	// 	}
-
-	// 	return true;
-
-	// }
 
 	public function showMessage() {
 
